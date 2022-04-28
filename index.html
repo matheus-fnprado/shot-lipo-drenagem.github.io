@@ -221,15 +221,23 @@ body{
 .estrelas{
     width: auto;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .oferta{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.ofertas{
+    margin:20px;
 }
 
 .shots{
@@ -314,6 +322,34 @@ body{
     font-size: 14px;
 }
 
+.img-shot{
+    width: auto;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.tl-shot{
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.precos{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.por{
+    font-size: 25px;
+}
+
     
     @media(max-width:426px){
         
@@ -358,7 +394,6 @@ body{
         }
 
         .bene-1{
-            line-height: 18px;
             text-align: center;
             padding-bottom: 5px;
         }
@@ -394,7 +429,7 @@ body{
         }
 
         .duv{
-            font-size: 15px;
+            font-size: 20px;
         }
 
         .accordion{
@@ -450,7 +485,6 @@ body{
         <section class="curiosidades">
             <div class="carol">
                 <h2 class="texto-curiosidade">Assista ao vídeo e tire todas as suas dúvidas!</h2>
-                <a href=""></a>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/1nUgjSSxCLI" title="YouTube video player" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen class="video-caroline"></iframe>
@@ -489,24 +523,37 @@ body{
 
         <section class="shots">
             <div class="clientes">
-                <img class="estrelas" src="estrelas_150px.webp">
+                <img src="estrelas_150px.webp" class="estrelas">
                 <p class="informativo">+ de 5.000 pessoas já começaram a perder medidas!</p>
             </div>
 
             <div class="oferta">
                 <div class="ofertas">
-                    <img src="">
+                    <p class="tl-shot">Shot Lipo Drenagem 30 Doses</p>
+                    <img class="img-shot" src="Shot-Lipo-Drenagem.webp">
+                    <p class="precos">de: R$203,90<br><span class="por">POR: R$109,90</span></p>
+                    <div class="addtocart_position_4 left">
+                        <form data-role="tocart-form" action="https://www.b3farma.com.br/checkout/cart/add/uenc/aHR0cHM6Ly93d3cuYjNmYXJtYS5jb20uYnIvY2F0YWxvZ3NlYXJjaC9yZXN1bHQvP3E9c2hvdCtsaXBv/product/1626/" method="post" data-hs-cf-bound="true">
+                        <input type="hidden" name="product" value="1626">
+                        <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuYjNmYXJtYS5jb20uYnIvY2hlY2tvdXQvY2FydC9hZGQvdWVuYy9hSFIwY0hNNkx5OTNkM2N1WWpObVlYSnRZUzVqYjIwdVluSXZZMkYwWVd4dlozTmxZWEpqYUM5eVpYTjFiSFF2UDNFOWMyaHZkQ3RzYVhCdi9wcm9kdWN0LzE2MjYv">
+                        <input name="form_key" type="hidden" value="CByPeVVPH5DiI2XP">                                                
+                        <button type="submit" title="Comprar" class="botao-comprar-1">Quero perder medidas</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="ofertas">
+                    <img src="estrelas_150px.webp" class="estrelas">
+                    <p class="tl-shot">Shot Lipo Tratamento COMPLETO 90 Doses</p>
+                    <img class="img-shot" src="Shot-Lipo-Drenagem-90.webp">
+                    <p class="precos">de: R$509,70<br><span class="por">POR: R$299,90</span></p>
                     <button class="botao-comprar-1">Quero perder medidas!</button>
                 </div>
 
                 <div class="ofertas">
-                    <img class="estrelas" src="estrelas_150px.webp">
-                    <img src="">
-                    <button class="botao-comprar-1">Quero perder medidas!</button>
-                </div>
-
-                <div class="ofertas">
-                    <img src="">
+                    <p class="tl-shot">Shot Lipo Drenagem 60 Doses</p>
+                    <img class="img-shot" src="Shot-Lipo-Drenagem-60.webp">
+                    <p class="precos">de: R$339,80<br><span class="por">POR: R$209,90</span></p>
                     <button class="botao-comprar-1">Quero perder medidas!</button>
                 </div>
 
@@ -535,15 +582,15 @@ body{
                 </div>
                 <button class="accordion">O Shot LipoDrenagem possui contraindicação?</button>
                 <div class="panel">
-                    <p>O uso do Shot LipoDrenagem não causa nenhum tipo de efeito colateral e não tem contraindicações. Contudo, gestantes e lactantes devem buscar orientação médica antes de iniciar o tratamento. Caso o paciente tenha intolerência a algum componente da fórmula, o uso deve ser suspendido.</p>
+                    <p class="text-acordion">O uso do Shot LipoDrenagem não causa nenhum tipo de efeito colateral e não tem contraindicações. Contudo, gestantes e lactantes devem buscar orientação médica antes de iniciar o tratamento. Caso o paciente tenha intolerência a algum componente da fórmula, o uso deve ser suspendido.</p>
                 </div>
                 <button class="accordion">Como tomar o Shot LipoDrenagem?</button>
                 <div class="panel">
-                    <p>Você deve tomar 01 flaconete por dia pela manhã, preferencialmente antes do café. O Shot LipoDrenagem pode ser armazenado na geladeira, ficando com um gostinho ainda melhor e refrescante!</p>
+                    <p class="text-acordion">Você deve tomar 01 flaconete por dia pela manhã, preferencialmente antes do café. O Shot LipoDrenagem pode ser armazenado na geladeira, ficando com um gostinho ainda melhor e refrescante!</p>
                 </div>
                 <button class="accordion">O site é seguro?</button>
                 <div class="panel">
-                    <p>Sim, o site é 100% seguro. Nossa plataforma trabalha com as mais avançadas ferramentas de segurança.</p>
+                    <p class="text-acordion">Sim, o site é 100% seguro. Nossa plataforma trabalha com as mais avançadas ferramentas de segurança.</p>
                 </div>
             </div>
 
@@ -570,4 +617,28 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script>
+
+<script>
+        require([
+            'jquery',
+            'mage/mage',
+            'Magento_Catalog/product/view/validation',
+            'Magento_Catalog/js/catalog-add-to-cart'
+        ], function ($) {
+            'use strict';
+
+            $('#product_addtocart_form').mage('validation', {
+                radioCheckboxClosest: '.nested',
+                submitHandler: function (form) {
+                    var widget = $(form).catalogAddToCart({
+                        bindSubmit: false
+                    });
+
+                    widget.catalogAddToCart('submitForm', $(form));
+
+                    return false;
+                }
+            });
+        });
+    </script>
 </html>
