@@ -229,6 +229,7 @@ body{
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .shots{
@@ -244,6 +245,73 @@ body{
 .informativo{
     font-size: 25px;
     font-weight: bold;
+}
+
+.reviews{
+    width: auto;
+    height: auto;
+    margin: 10px;
+
+}
+
+.rv-clientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.title-reviews{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+.accordion{
+    background-color: rgb(81, 0, 1);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    padding:20px;
+    text-align: justify;
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.active, .accordion:hover{
+    background-color: rgb(121, 0, 1);
+}
+
+.panel{
+    display: none;
+    overflow: hidden;
+}
+
+.duvidas{
+    background-color: rgb(81, 0, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.duv{
+    font-size: 30px;
+    color:white;
+    text-align: center;
+}
+
+.text-acordion{
+    padding-left: 10px;
+    padding-right: 10px;
+    color:#fff;
+    font-size: 14px;
 }
 
     
@@ -303,7 +371,35 @@ body{
             font-size: 18px;
         }
 
+        .rv-clientes{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }       
 
+        .oferta{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .duvidas{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .duv{
+            font-size: 15px;
+        }
+
+        .accordion{
+            font-size: 15px;
+        }
     }
 </style>
 <body>
@@ -398,18 +494,18 @@ body{
             </div>
 
             <div class="oferta">
-                <div>
+                <div class="ofertas">
                     <img src="">
                     <button class="botao-comprar-1">Quero perder medidas!</button>
                 </div>
 
-                <div>
+                <div class="ofertas">
                     <img class="estrelas" src="estrelas_150px.webp">
                     <img src="">
                     <button class="botao-comprar-1">Quero perder medidas!</button>
                 </div>
 
-                <div>
+                <div class="ofertas">
                     <img src="">
                     <button class="botao-comprar-1">Quero perder medidas!</button>
                 </div>
@@ -417,7 +513,61 @@ body{
             </div>
         </section>
 
-    </main> 
+        <section>
+            <h3 class="title-reviews">Veja os Resultados das nossas clientes!</h3>
+            <div class="rv-clientes">
+                <img class="reviews" src="review-1.webp">
+                <img class="reviews" src="review-2.webp">
+                <img class="reviews" src="review-3.webp">
+                <img class="reviews" src="review-4.webp">
+            </div>
+
+        </section>
+
+        <section class="duvidas">
+            
+            <h3 class="duv">+ Principais Dúvidas</h3>
+            
+            <div>
+                <button class="accordion">O que é Shot LipoDrenagem e quais benefícios ele oferece?</button>
+                <div class="panel">
+                    <p class="text-acordion">O Shot LipoDrenagem é composto por Morosil, um dos ativos mais receitados na redução de medidas abdomiais e DrenowC, um potente fitoativo com ação diurética que age diretamente no combate a retenção excessiva de líquidos, além de ter alta concentração de Vitamina C que é um nutriente com forte ação antioxidante, capaz de melhorar o aspecto da pele e o sistema imunológico</p>
+                </div>
+                <button class="accordion">O Shot LipoDrenagem possui contraindicação?</button>
+                <div class="panel">
+                    <p>O uso do Shot LipoDrenagem não causa nenhum tipo de efeito colateral e não tem contraindicações. Contudo, gestantes e lactantes devem buscar orientação médica antes de iniciar o tratamento. Caso o paciente tenha intolerência a algum componente da fórmula, o uso deve ser suspendido.</p>
+                </div>
+                <button class="accordion">Como tomar o Shot LipoDrenagem?</button>
+                <div class="panel">
+                    <p>Você deve tomar 01 flaconete por dia pela manhã, preferencialmente antes do café. O Shot LipoDrenagem pode ser armazenado na geladeira, ficando com um gostinho ainda melhor e refrescante!</p>
+                </div>
+                <button class="accordion">O site é seguro?</button>
+                <div class="panel">
+                    <p>Sim, o site é 100% seguro. Nossa plataforma trabalha com as mais avançadas ferramentas de segurança.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
 
 </body>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 </html>
