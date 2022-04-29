@@ -95,6 +95,7 @@ body{
     font-weight: 400;
     font-size: 20px;
  }
+
  
  .botao-comprar:hover{
      background-color: #fff;
@@ -131,10 +132,13 @@ body{
  .heading-2{
     font-family: Arial, Helvetica, sans-serif;
     color: #000;
-    font-size: 25px;
+    font-size: 30px;
     align-items: left;
     justify-content: space-around;
-    padding: 24px;
+ }
+
+ .peso{
+     color:rgb(121, 0, 1)
  }
 
  .conteudo-principal-escrito{
@@ -142,8 +146,8 @@ body{
     font-size: 18px;
     align-items: left;
     justify-content: space-around;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
  }
 
  .lista-desejos{
@@ -151,7 +155,6 @@ body{
     font-size: 22px;
     align-items: left;
     justify-content: space-around;
-    padding: 24px;
     display: flex;
     flex-direction: column;
 }
@@ -229,19 +232,21 @@ body{
 .oferta{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    column-gap: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    column-gap: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .ofertas{
     margin-top: 20px;
-    border: 2px solid black ;
+    border: 2px solid black;
+    border-radius: 10px;
     padding-bottom: 20px;
+    height: 800px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .shots{
@@ -257,6 +262,7 @@ body{
 .informativo{
     font-size: 25px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .reviews{
@@ -467,7 +473,7 @@ body{
 
         <section class="principal">
             <div class="conteudo-principal">
-                <h2 class="heading-2">Para quem é o Shot Lipo Drenagem?</h2>
+                <h2 class="heading-2"><span class="peso">PERCA MEDIDAS</span> SEM PERDER SAÚDE</h2>
                 <p class="conteudo-principal-escrito">Formulado para quem quer perder medidas de verdade e ficar livre do efeito sanfona, 
                     Shot Lipo Drenagem conquistou mais de 5.000 clientes como uma das principais 
                     soluções para acabar com os pneuzinhos de forma natural e sem sofrimento.<br><br>
@@ -532,6 +538,10 @@ body{
                 <p class="informativo">+ de 5.000 pessoas já começaram a perder medidas!</p>
             </div>
 
+            <p>ESCOLHA O KIT <span>IDEAL PARA VOCÊ</span></p>
+            <p>Com base nos resultados enviados por clientes, recomendamos o tratamento de 3 meses para obter resultados satisfatórios.</p>
+
+
             <div class="oferta">
                 <div class="ofertas">
                     <p class="tl-shot">Shot Lipo Drenagem 30 Doses</p>
@@ -548,7 +558,6 @@ body{
                 </div>
 
                 <div class="ofertas">
-                    <img src="estrelas_150px.webp" class="estrelas">
                     <p class="tl-shot">Shot Lipo Tratamento COMPLETO 90 Doses</p>
                     <img class="img-shot" src="Shot-Lipo-Drenagem-90.webp">
                     <p class="precos">de: R$509,70<br><span class="por">POR: R$299,90</span></p>
@@ -566,7 +575,7 @@ body{
         </section>
 
         <section>
-            <h3 class="title-reviews">Veja os Resultados das nossas clientes!</h3>
+            <h3 class="title-reviews">CLIENTES REAIS, RESULTADOS REAIS</h3>
             <div class="rv-clientes">
                 <img class="reviews" src="review-1.webp">
                 <img class="reviews" src="review-2.webp">
