@@ -46,24 +46,8 @@ body{
 
 .img-1{
     padding: 20px;
-}
-
-.lista-beneficios{
-    color: #fff;
-    font-size: 16px;
-    align-items: left;
-    justify-content: space-around;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-}
-
-.beneficios{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 40px;
+    width: auto;
+    height: auto;
 }
 
 .botao-comprar{
@@ -96,7 +80,6 @@ body{
     font-size: 20px;
  }
 
- 
  .botao-comprar:hover{
      background-color: #fff;
      color: green;
@@ -110,7 +93,9 @@ body{
  }
 
  .img-infos{
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: auto;
  }
 
@@ -126,7 +111,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 24px;
+    padding: 12px;
  }
 
  .heading-2{
@@ -148,6 +133,8 @@ body{
     justify-content: space-around;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
  }
 
  .lista-desejos{
@@ -165,6 +152,20 @@ body{
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
+}
+
+.video-caroline{
+    padding-top:20px;
+    margin:auto;
+    padding: auto;
+    width: 600px;
+    height: 400px;
+}
+
+.carol{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .imagem-desejos{
@@ -205,6 +206,9 @@ body{
     width:131px;
     height: 131px;
     padding: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .div-1{
@@ -374,12 +378,16 @@ body{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .texto-kit{
     text-align: center;
     font-size: 18px;
     font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .span-1{
@@ -395,8 +403,71 @@ body{
     padding-top: 8px;
 }
 
+.initial{
+    color:#fff;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.txt-top{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.icn{
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding-bottom: 5px
+}
     
     @media(max-width:426px){
+
+        .conteudo-principal-escrito{
+            color: #000;
+            font-size: 16px;
+            align-items: left;
+            justify-content: space-around;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+
+        .txt-top{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .initial{
+            color:#fff;
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 20px;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        .mtb{
+            padding-top: 20px;
+            width: 50%;
+        }
         
         .topo{
             width:100%;
@@ -487,18 +558,29 @@ body{
     <main>
         <section class="topo">
             <div class="conteudo-topo">
-                <img class="img-1" src="img1.webp">
+                <img class="img-1" src="img-1.png">
 
                 <div class="conteudo-topo-2">
-                    <ul class="lista-beneficios">
-                        <li class="beneficios">Redução de até 50% das medidas abdominais</li>
-                        <li class="beneficios">Potente efeito antioxidante</li>
-                        <li class="beneficios">Auxilia na redução da celulite</li>
-                        <li class="beneficios">Redução de 60% do inchaço excessivo</li>
-                        <li class="beneficios">Rapida absorção pelo organismo</li>
-                        <li class="beneficios">Formúla 100% natural</li>
-                     </ul>
-                     
+                    <p class="txt-top">Tome apenas 1 Flaconete ao dia e elimine aquela gordurinha em excesso que tanto te incomoda e surpreenda a todos com sua nova aparência.</p>
+                    
+                    <div class="initial">
+                        <div class="mtb">
+                            <img class="icn" src="fita-metrica-_2_.webp">
+                            <p>REDUZ<br>MEDIDAS</p>
+                        </div>
+                        <div class="mtb">
+                            <img class="icn" src="gotas.webp">
+                            <p>REDUZ<br>INCHAÇO</p>
+                        </div>
+                        <div class="mtb">
+                            <img class="icn" src="vitamina-e.webp">
+                            <p>EFEITO<br>ANTIOXIDANTE</p>
+                        </div>
+                        <div class="mtb">
+                            <img class="icn" src="comida-organica.webp">
+                            <p>FORMULA<br>NATURAL</p>
+                        </div>
+                    </div>                     
                      <button class="botao-comprar">Quero comprar agora</button>
                 </div>
 
