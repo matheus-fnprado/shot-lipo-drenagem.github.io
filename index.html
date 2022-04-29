@@ -92,7 +92,7 @@ body{
     border-radius: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 20px;
  }
 
@@ -244,7 +244,7 @@ body{
     border: 2px solid black;
     border-radius: 10px;
     padding-bottom: 20px;
-    height: 800px;
+    height: 830px;
     justify-content: space-around;
     align-items: center;
 }
@@ -284,7 +284,7 @@ body{
 .title-reviews{
     text-align: center;
     padding-top: 50px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .accordion{
@@ -348,16 +348,51 @@ body{
     padding-top: 5px;
 }
 
-.precos{
+.tl-shot-1{
     font-size: 20px;
     text-align: center;
     font-weight: bold;
+}
+
+.precos{
+    font-size: 15px;
+    text-align: center;
     padding-top: 5px;
     padding-bottom: 10px;
 }
 
 .por{
-    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    font-size: 30px;
+}
+
+.frase-kit{
+    font-size: 30px;
+    padding-top: 40px;
+    font-weight:bolder;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.texto-kit{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.span-1{
+    color:orangered;
+}
+
+.frete{
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
 }
 
     
@@ -494,8 +529,11 @@ body{
         </section>
 
         <section class="curiosidades">
+            <div class="clientes">
+                <img src="estrelas_150px.webp" class="estrelas">
+                <p class="informativo">+ de 5.000 pessoas já começaram a perder medidas!</p>
+            </div>
             <div class="carol">
-                <h2 class="texto-curiosidade">Assista ao vídeo e tire todas as suas dúvidas!</h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/1nUgjSSxCLI" title="YouTube video player" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen class="video-caroline"></iframe>
@@ -533,42 +571,44 @@ body{
         </section>
 
         <section class="shots">
-            <div class="clientes">
-                <img src="estrelas_150px.webp" class="estrelas">
-                <p class="informativo">+ de 5.000 pessoas já começaram a perder medidas!</p>
-            </div>
 
-            <p>ESCOLHA O KIT <span>IDEAL PARA VOCÊ</span></p>
-            <p>Com base nos resultados enviados por clientes, recomendamos o tratamento de 3 meses para obter resultados satisfatórios.</p>
+            <p class="frase-kit">ESCOLHA O KIT <span class="span-1">IDEAL PARA VOCÊ</span></p>
+            <p class="texto-kit">Com base nos resultados enviados por clientes, recomendamos o tratamento de 3 meses para obter resultados satisfatórios.</p>
 
 
             <div class="oferta">
                 <div class="ofertas">
-                    <p class="tl-shot">Shot Lipo Drenagem 30 Doses</p>
+                    <p class="tl-shot">COMPRE 3 CAIXAS</p>
+                    <img class="img-shot" src="Shot-Lipo-Drenagem-90.webp">
+                    <p class="tl-shot-1">TRATAMENTO PARA 3 MESES</p>
+                    <p class="precos">de: R$509,70<br><span class="por">POR: R$299,90</span></p>
+                    <button class="botao-comprar-1">COMPRAR AGORA</button>
+                    <img class="frete" src="frete-todo-brasil.webp">
+                </div>
+
+                <div class="ofertas">
+                    <p class="tl-shot">COMPRE APENAS 1</p>
                     <img class="img-shot" src="Shot-Lipo-Drenagem.webp">
+                    <p class="tl-shot-1">TRATAMENTO PARA 01 MÊS</p>
                     <p class="precos">de: R$203,90<br><span class="por">POR: R$109,90</span></p>
                     <div class="addtocart_position_4 left">
                         <form data-role="tocart-form" action="https://www.b3farma.com.br/checkout/cart/add/uenc/aHR0cHM6Ly93d3cuYjNmYXJtYS5jb20uYnIvY2F0YWxvZ3NlYXJjaC9yZXN1bHQvP3E9c2hvdCtsaXBv/product/1626/" method="post" data-hs-cf-bound="true">
                         <input type="hidden" name="product" value="1626">
                         <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuYjNmYXJtYS5jb20uYnIvY2hlY2tvdXQvY2FydC9hZGQvdWVuYy9hSFIwY0hNNkx5OTNkM2N1WWpObVlYSnRZUzVqYjIwdVluSXZZMkYwWVd4dlozTmxZWEpqYUM5eVpYTjFiSFF2UDNFOWMyaHZkQ3RzYVhCdi9wcm9kdWN0LzE2MjYv">
                         <input name="form_key" type="hidden" value="CByPeVVPH5DiI2XP">                                                
-                        <button type="submit" title="Comprar" class="botao-comprar-1">Quero perder medidas</button>
+                        <button type="submit" title="Comprar" class="botao-comprar-1">COMPRAR AGORA</button>
                         </form>
+                        <img class="frete" src="frete-todo-brasil.webp">
                     </div>
                 </div>
 
                 <div class="ofertas">
-                    <p class="tl-shot">Shot Lipo Tratamento COMPLETO 90 Doses</p>
-                    <img class="img-shot" src="Shot-Lipo-Drenagem-90.webp">
-                    <p class="precos">de: R$509,70<br><span class="por">POR: R$299,90</span></p>
-                    <button class="botao-comprar-1">Quero perder medidas!</button>
-                </div>
-
-                <div class="ofertas">
-                    <p class="tl-shot">Shot Lipo Drenagem 60 Doses</p>
+                    <p class="tl-shot">COMPRE 2 CAIXAS</p>
                     <img class="img-shot" src="Shot-Lipo-Drenagem-60.webp">
+                    <p class="tl-shot-1">TRATAMENTO PARA 2 MESES</p>
                     <p class="precos">de: R$339,80<br><span class="por">POR: R$209,90</span></p>
-                    <button class="botao-comprar-1">Quero perder medidas!</button>
+                    <button class="botao-comprar-1">COMPRAR AGORA</button>
+                    <img class="frete" src="frete-todo-brasil.webp">
                 </div>
 
             </div>
