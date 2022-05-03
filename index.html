@@ -236,6 +236,8 @@ body{
 .oferta{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
     column-gap: 40px;
@@ -248,9 +250,8 @@ body{
     border: 2px solid black;
     border-radius: 10px;
     padding-bottom: 20px;
-    height: 830px;
-    justify-content: space-around;
-    align-items: center;
+    height: auto;
+    width: auto;
 }
 
 .shots{
@@ -291,8 +292,8 @@ body{
     font-size: 30px;
 }
 
-.accordion{
-    background-color: rgb(81, 0, 1);
+.acd{
+    background-color: #510001;
     cursor: pointer;
     border: none;
     outline: none;
@@ -304,8 +305,8 @@ body{
     font-weight: bold;
 }
 
-.active, .accordion:hover{
-    background-color: rgb(121, 0, 1);
+.active, .acd:hover{
+    background-color: #790001;
 }
 
 .panel{
@@ -314,7 +315,7 @@ body{
 }
 
 .duvidas{
-    background-color: rgb(81, 0, 1);
+    background-color: #510001;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -440,6 +441,14 @@ body{
             height: auto;
         }
 
+        .imagem-desejos{
+            display: flex;
+            width: auto;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+
         .conteudo-principal-escrito{
             color: #000;
             font-size: 16px;
@@ -463,17 +472,12 @@ body{
             font-weight: bold;
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
             justify-content: center;
             padding-bottom: 20px;
             padding-top: 10px;
             text-align: center;
         }
 
-        .mtb{
-            padding-top: 20px;
-            width: 50%;
-        }
         
         .topo{
             width:100%;
@@ -555,7 +559,7 @@ body{
             font-size: 20px;
         }
 
-        .accordion{
+        .acd{
             font-size: 15px;
         }
     }
@@ -695,7 +699,7 @@ body{
 </style>
 <body>
     <main>
-        <section class="topo">
+        <div class="topo">
             <div class="conteudo-topo">
                 <img class="img-1" src="img-1.png">
 
@@ -725,9 +729,9 @@ body{
 
             </div>
                 <img class="img-infos" src="infos.webp">
-        </section>
+        </div>
 
-        <section class="principal">
+        <div class="principal">
             <div class="conteudo-principal">
                 <h2 class="heading-2"><span class="peso">PERCA MEDIDAS</span> SEM PERDER SAÚDE</h2>
                 <p class="conteudo-principal-escrito">Formulado para quem quer perder medidas de verdade e ficar livre do efeito sanfona, 
@@ -737,7 +741,8 @@ body{
                     composto por Morosil e DrenowC. A combinação exclusiva dentro de cada shot 
                     capaz de proporcionar uma poderosa ação antioxidante, reduzindo a celulite e 
                     auxiliando na eliminação de até 50% das medidas abdominais.<br><br>
-                    Se você deseja:</p>
+                    Se você deseja:
+                </p>
                 
                 <ul class="lista-desejos">
                     <li class="desejos">Reduzir medidas de maneira eficaz</li>
@@ -747,9 +752,9 @@ body{
                 </ul>
             </div>
             <img class="imagem-desejos" src="mulher.webp">
-        </section>
+        </div>
 
-        <section class="curiosidades">
+        <div class="curiosidades">
             <div class="clientes">
                 <img src="estrelas_150px.webp" class="estrelas">
                 <p class="informativo">+ de 5.000 pessoas já começaram a perder medidas!</p>
@@ -786,12 +791,12 @@ body{
                     </div>
                 </div>
                 <div class="btn">
-                <button class="botao-comprar-1">Quero perder medidas!</button>
+                    <button class="botao-comprar-1">Quero perder medidas!</button>
                 </div> 
             </div>
-        </section>
+        </div>
 
-        <section class="shots">
+        <div class="shots">
 
             <p class="frase-kit">ESCOLHA O KIT <span class="span-1">IDEAL PARA VOCÊ</span></p>
             <p class="texto-kit">Com base nos resultados enviados por clientes, recomendamos o tratamento de 3 meses para obter resultados satisfatórios.</p>
@@ -811,16 +816,9 @@ body{
                     <p class="tl-shot">COMPRE APENAS 1</p>
                     <img class="img-shot" src="Shot-Lipo-Drenagem.webp">
                     <p class="tl-shot-1">TRATAMENTO PARA 01 MÊS</p>
-                    <p class="precos">de: R$203,90<br><span class="por">POR: R$109,90</span></p>
-                    <div class="addtocart_position_4 left">
-                        <form data-role="tocart-form" action="https://www.b3farma.com.br/checkout/cart/add/uenc/aHR0cHM6Ly93d3cuYjNmYXJtYS5jb20uYnIvY2F0YWxvZ3NlYXJjaC9yZXN1bHQvP3E9c2hvdCtsaXBv/product/1626/" method="post" data-hs-cf-bound="true">
-                        <input type="hidden" name="product" value="1626">
-                        <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuYjNmYXJtYS5jb20uYnIvY2hlY2tvdXQvY2FydC9hZGQvdWVuYy9hSFIwY0hNNkx5OTNkM2N1WWpObVlYSnRZUzVqYjIwdVluSXZZMkYwWVd4dlozTmxZWEpqYUM5eVpYTjFiSFF2UDNFOWMyaHZkQ3RzYVhCdi9wcm9kdWN0LzE2MjYv">
-                        <input name="form_key" type="hidden" value="CByPeVVPH5DiI2XP">                                                
-                        <button type="submit" title="Comprar" class="botao-comprar-1">COMPRAR AGORA</button>
-                        </form>
-                        <img class="frete" src="frete-todo-brasil.webp">
-                    </div>
+                    <p class="precos">de: R$203,90<br><span class="por">POR: R$109,90</span></p>                                               
+                    <button class="botao-comprar-1">COMPRAR AGORA</button>
+                    <img class="frete" src="frete-todo-brasil.webp">
                 </div>
 
                 <div class="ofertas">
@@ -833,9 +831,9 @@ body{
                 </div>
 
             </div>
-        </section>
+        </div>
 
-        <section>
+        <div>
             <h3 class="title-reviews">CLIENTES REAIS, RESULTADOS REAIS</h3>
             <div class="rv-clientes">
                 <img class="reviews" src="review-1.webp">
@@ -844,76 +842,35 @@ body{
                 <img class="reviews" src="review-4.webp">
             </div>
 
-        </section>
+        </div>
 
-        <section class="duvidas">
+        <div class="duvidas">
             
             <h3 class="duv">+ Principais Dúvidas</h3>
             
             <div>
-                <button class="accordion">O que é Shot LipoDrenagem e quais benefícios ele oferece?</button>
+                <button class="acd">O que é Shot LipoDrenagem e quais benefícios ele oferece?</button>
                 <div class="panel">
                     <p class="text-acordion">O Shot LipoDrenagem é composto por Morosil, um dos ativos mais receitados na redução de medidas abdomiais e DrenowC, um potente fitoativo com ação diurética que age diretamente no combate a retenção excessiva de líquidos, além de ter alta concentração de Vitamina C que é um nutriente com forte ação antioxidante, capaz de melhorar o aspecto da pele e o sistema imunológico</p>
                 </div>
-                <button class="accordion">O Shot LipoDrenagem possui contraindicação?</button>
+                <button class="acd">O Shot LipoDrenagem possui contraindicação?</button>
                 <div class="panel">
                     <p class="text-acordion">O uso do Shot LipoDrenagem não causa nenhum tipo de efeito colateral e não tem contraindicações. Contudo, gestantes e lactantes devem buscar orientação médica antes de iniciar o tratamento. Caso o paciente tenha intolerência a algum componente da fórmula, o uso deve ser suspendido.</p>
                 </div>
-                <button class="accordion">Como tomar o Shot LipoDrenagem?</button>
+                <button class="acd">Como tomar o Shot LipoDrenagem?</button>
                 <div class="panel">
                     <p class="text-acordion">Você deve tomar 01 flaconete por dia pela manhã, preferencialmente antes do café. O Shot LipoDrenagem pode ser armazenado na geladeira, ficando com um gostinho ainda melhor e refrescante!</p>
                 </div>
-                <button class="accordion">O site é seguro?</button>
+                <button class="acd">O site é seguro?</button>
                 <div class="panel">
                     <p class="text-acordion">Sim, o site é 100% seguro. Nossa plataforma trabalha com as mais avançadas ferramentas de segurança.</p>
                 </div>
             </div>
 
-        </section>
+        </div>
 
     </main>
 
 </body>
 
-<script>
-    var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
-
-<script>
-        require([
-            'jquery',
-            'mage/mage',
-            'Magento_Catalog/product/view/validation',
-            'Magento_Catalog/js/catalog-add-to-cart'
-        ], function ($) {
-            'use strict';
-
-            $('#product_addtocart_form').mage('validation', {
-                radioCheckboxClosest: '.nested',
-                submitHandler: function (form) {
-                    var widget = $(form).catalogAddToCart({
-                        bindSubmit: false
-                    });
-
-                    widget.catalogAddToCart('submitForm', $(form));
-
-                    return false;
-                }
-            });
-        });
-    </script>
 </html>
